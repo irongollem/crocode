@@ -1,5 +1,7 @@
 # 🏞 Nuxt & Netlify CMS Starter
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7d56b37c-9bd8-4de3-8aeb-9fbb785acf8f/deploy-status)](https://app.netlify.com/sites/crocode/deploys)
+
 A lot of the starter repos for **Nuxt x Netlify CMS** use a module like `nuxtent` or `nuxtdown` to manage flat file content. This project is meant to be a solution for those who don't mind doing a little more configuration to not have to rely on these dependencies.
 
 ## 🎉 Getting Started

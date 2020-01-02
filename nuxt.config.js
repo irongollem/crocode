@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'apple-touch-icon', sizes: "180x180", href: '/apple-icon-180x180.png' },
+      { rel: 'icon', type: 'image/png', sizes: "32x32", href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: "32x32", href: '/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: "16x16", href: '/favicon16x16.png' },
+      { rel: 'manifest', href: '/site.webmanifest' }
+    ]
   },
   generate: {
     routes: function() {
