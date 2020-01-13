@@ -26,12 +26,12 @@ export default {
   generate: {
     routes: function() {
       const fs = require('fs')
-      return fs.readdirSync('./assets/content/blog').map(file => {
-        return {
-          route: `/blog/${file.slice(2, -5)}`,
-          payload: require(`./assets/content/blog/${file}`)
-        }
-      })
+      return fs
+        .readdirSync('./assets/content/blog')
+        .map(file => ({
+                  route: `/blog/${file.slice(2, -5)}`,
+                  payload: require(`./assets/content/blog/${file}`)
+        }))
     }
   },
   /*

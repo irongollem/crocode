@@ -30,7 +30,7 @@ a {
   color: #526488;
 }
 
-.title {
+h1 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   display: block;
@@ -38,9 +38,10 @@ a {
   font-size: 3.2rem;
   color: #35495e;
   letter-spacing: 1px;
+  margin-bottom: .5em;
 }
 
-.subtitle {
+h2 {
   font-weight: 300;
   font-size: 2rem;
   color: #526488;

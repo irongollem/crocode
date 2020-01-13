@@ -6,6 +6,36 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: 'content'
+    label: 'Front page content'
+    folder: 'assets/content/front'
+    create: true
+    format: 'json'
+    slug: '{{hero.title}}'
+    editor:
+      preview: true
+    fields:
+      - label: Hero
+        name: hero
+        widget: object
+        fields: 
+          - label: Title
+            name: title
+            widget: string
+         -  label: Body
+            name: body
+            widget: markdown
+    -  label: Icon
+        name: icon
+        widget: image
+        allow_multiple: false
+    -  label: Alt text
+        name: iconAlt
+        widget: string
+    -  label: CSS/Style
+        name: style
+        widget: text
+
   - name: 'blog'
     label: 'Blog'
     folder: 'assets/content/blog'
