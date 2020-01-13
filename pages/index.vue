@@ -46,7 +46,7 @@ export default {
   &__first {
     color: $white;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url('/img/gaetano-cessati-YOX8ZMTo7hk-unsplash.jpg');
+      url('/img/gaetano-cessati-YOX8ZMTo7hk-unsplash.jpg?nf_resize=fit&w=1600');
     background-size: cover;
     background-position: center 20%;
   }
