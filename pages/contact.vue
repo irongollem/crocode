@@ -11,19 +11,19 @@
         <p>
         <label>
             Your Name:
-            <input type="text" name="name" v-model="name" />
+            <input type="text" name="name" v-model="form.name" />
         </label>
         </p>
         <p>
         <label>
             Your Email:
-            <input type="email" name="email" v-model="email"/>
+            <input type="email" name="email" v-model="form.email"/>
         </label>
         </p>
         <p>
         <label>
             Message:
-            <textarea name="message" v-model="message"></textarea>
+            <textarea name="message" v-model="form.message"></textarea>
         </label>
         </p>
         <p>
