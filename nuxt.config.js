@@ -41,7 +41,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -53,9 +55,17 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/markdownit'],
+  modules: [
+    '@nuxtjs/markdownit',
+    '@nuxtjs/style-resources'
+  ],
   markdownit: {
     injected: true
+  },
+  styleResources: {
+    scss: [
+      './assets/vars/*.scss'
+    ]
   },
   /*
    ** Build configuration
