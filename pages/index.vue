@@ -1,17 +1,8 @@
 <template>
   <page>
-    <container
-      class="block"
-      v-for="(item, i) in content"
-      :style="item.style"
-      :key="i">
-      <img 
-        :src="item.icon"
-        class="logo"
-        :alt="item.iconAlt"
-        :v-if="item.icon"
-      />
-      <article class="hero" v-html="$md.render(item.body)"></article>
+    <container class="block" v-for="(item, i) in content" :style="item.style" :key="i">
+      <article class="half left" v-html="$md.render(item.left)"></article>
+      <article class="half right" v-html="$md.render(item.right)"></article>
     </container>
   </page>
 </template>
@@ -42,21 +33,23 @@ export default {
 <style lang='scss'>
 .block {
   &:nth-child(odd) {
-    background-color: $black; 
-    color: $white;   
-    & h1  {
-      color: $white;   
+    background-color: $black;
+    color: $white;
+    & h1 {
+      color: $white;
     }
+    & .half {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &.left {
+      flex: 2;
+    }
+    &.right {
+      flex: 3;
+    }
+    }
+    
   }
-}
-.logo {
-  padding: 1em;
-  flex: 2;
-}
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 3;
 }
 </style>

@@ -15,15 +15,11 @@ collections:
     editor:
       preview: true
     fields:
-      - label: Icon
-        name: icon
-        widget: image
-        allow_multiple: false
-      - label: Alt text
-        name: iconAlt
-        widget: string
-      - label: Body
-        name: body
+      - label: Left
+        name: left
+        widget: markdown
+      - label: Right
+        name: right
         widget: markdown
       - label: CSS/Style
         name: style
