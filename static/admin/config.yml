@@ -11,21 +11,24 @@ collections:
     folder: "assets/content/front"
     create: true
     format: "json"
-    slug: "{{hero.title}}"
+    slug: "{{slug}}"
     editor:
       preview: true
     fields:
       - label: Left
         name: left
         widget: markdown
+        required: false
       - label: Right
         name: right
         widget: markdown
+        required: false
       - label: CSS/Style
         name: style
         widget: code
         default_language: CSS
         output_code_only: true
+        required: false
 
   - name: "blog"
     label: "Blog"

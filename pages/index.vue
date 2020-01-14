@@ -38,18 +38,21 @@ export default {
     & h1 {
       color: $white;
     }
+  }
+  &:nth-child(3n) {
     & .half {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      &.left {
-      flex: 2;
+      &.left { flex: 3; }
+      &.right { flex: 2; }
     }
-    &.right {
-      flex: 3;
-    }
-    }
-    
+  }
+
+  & .half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    &.left { flex: 2; }
+    &.right { flex: 3; }
   }
 }
 </style>

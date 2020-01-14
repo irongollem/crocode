@@ -36,6 +36,7 @@ export const actions = {
     )
       const contentBlocks = files.keys().map(key => {
         const res = files (key)
+        res.slug = key.slice(2, -5)
         return res
       })
     commit('setFrontPageData', contentBlocks)
