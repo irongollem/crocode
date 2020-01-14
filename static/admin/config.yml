@@ -15,6 +15,9 @@ collections:
     editor:
       preview: true
     fields:
+      - label: Title
+        name: title
+        widget: string
       - label: Left
         name: left
         widget: markdown
