@@ -60,7 +60,8 @@ export default {
     '@nuxtjs/style-resources'
   ],
   markdownit: {
-    injected: true
+    injected: true,
+    html: true
   },
   styleResources: {
     scss: [

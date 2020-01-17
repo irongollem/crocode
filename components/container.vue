@@ -1,7 +1,7 @@
 <template>
-    <section class='container'>
+    <article class='container'>
         <slot/>
-    </section>
+    </article>
 </template>
 
 <script>
@@ -23,7 +23,7 @@ export default {
     margin: 0 auto;
     justify-content: space-around;
     align-content: space-around;
-    @media screen and(min-width: 300px)  {
+    @media screen and(min-width: 380px)  {
         width: 90%;
     }
 }

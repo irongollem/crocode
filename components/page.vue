@@ -13,5 +13,6 @@ export default {
 <style lang='scss' scoped>
 .page {
     width: 100%;
+    min-height: calc(100vh - 175px -2em);
 }
 </style>

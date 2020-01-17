@@ -1,8 +1,9 @@
 <template>
   <page>
     <container class="block" v-for="(item, i) in content" :style="item.style" :key="i">
-      <article class="half left" v-html="$md.render(item.left)"></article>
-      <article class="half right" v-html="$md.render(item.right)"></article>
+      <section class="half left" v-if="item.left" v-html="$md.render(item.left)" :class="{'spaced': item.center}"></section>
+      <section class="half spaced" v-if="item.center" v-html="$md.render(item.center)"></section>
+      <section class="half right" v-if="item.right" v-html="$md.render(item.right)" :class="{'spaced': item.center}"></section>
     </container>
   </page>
 </template>
@@ -35,8 +36,11 @@ export default {
   &:nth-child(odd) {
     background-color: $black;
     color: $white;
-    & h1 {
+    & h1, & a {
       color: $white;
+    }
+    & a:hover {
+      color: grey;
     }
   }
   &:nth-child(3n) {
@@ -48,11 +52,37 @@ export default {
 
   & .half {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 2em;
-    &.left { flex: 2; }
-    &.right { flex: 3; }
+    flex-wrap: wrap;
+    align-items: center;
+
+    &.left { 
+      & h1, & h2 {
+        width: 100%;
+        text-align: center;
+      }
+      & img, & p {
+        flex-grow: 1;
+        min-width: 30%;
+        text-align: center;
+      }
+      flex: 2; 
+    }
+    &.right {
+      flex: 3;  
+      flex-direction: column;
+    }
+    &.spaced {
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-evenly;
+      align-items: center;
+      & h1, & h2, & img, & p {
+        width: 100%;
+        text-align: center;
+      }
+    }
   }
 }
 </style>

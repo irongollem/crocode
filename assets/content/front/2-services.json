@@ -1,0 +1,6 @@
+{
+    "title": "Services",
+    "left": "## Design\n\n * Professional design in tools like Adobe XD\n * Custom iconography, image work and style\n * Follow up using existing corporate style",
+    "center": "## (Creative) front end development\n\n * Web front-end using JavaScript\n * Modern frameworks like Vue, React or Angular\n * Local with Electron or  PWA\n * Cross platform with Flutter",
+    "right": "## Full-stack development\n\n * Java, NodeJS, Go, Python, Scala\n * Modern DB’s and protocols like GraphQL"
+}
